@@ -15,7 +15,11 @@ typedef struct BSTNode {
 typedef struct BSTNode* link;
 
 // Declare head as an extern variable
+extern link head;
 
+void Insert(ITEM item);
+ITEM Search(char* szKey);
+void inorder_traversal(link h);
 int count(link h);
 int height(link h);
 
